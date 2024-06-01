@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #62a3ce, #df0c8e);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    height: 400px;
+    width: 400px;
+    border: 10px solid wheat;
+    padding: 10px; 
+    margin-bottom: 20px;
+    border-radius: 50%;
+    animation: fananim linear infinite;
+}
+@keyframes fananim{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.btn{
+    margin-top: 0;
+    display: flex;
+    flex-direction:row;
+}
+button{
+    width: 90px;
+    height: 60px;
+    padding: 10px;  
+    margin:  0 20px;
+    font-size: 25px;
+    font-weight: 550;
+    border: none;
+    background-color: rgb(128, 0, 64);
+    color: white;
+    border-radius: 10%;
+    text-align: center;
+}
+button:active{
+    box-shadow: 0px 10px 10px black;
+    transform: scale(0.95);
+}
